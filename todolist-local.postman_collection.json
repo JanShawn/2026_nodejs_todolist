@@ -1,0 +1,140 @@
+{
+  "info": {
+    "_postman_id": "9ff3fd27-7fc5-400c-8814-262abade7c14",
+    "name": "todolist-本地端",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "13248712"
+  },
+  "item": [
+    {
+      "name": "取得所有代辦清單",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:3005/todos",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3005",
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "新增單筆代辦",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\":\"完成工作666\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:3005/todos",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3005",
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "刪除所有代辦",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:3005/todos",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3005",
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "刪除單筆代辦",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:3005/todos/10259a2a-9180-4c12-8da5-8e6248e8af93",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3005",
+          "path": [
+            "todos",
+            "10259a2a-9180-4c12-8da5-8e6248e8af93"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "修改單筆代辦",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\":\"完成工作7777\",\n    \"completed\":false,\n    \n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:3005/todos/89cdf0de-7ab4-4425-8a8b-fbd94b6ed33f",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3005",
+          "path": [
+            "todos",
+            "89cdf0de-7ab4-4425-8a8b-fbd94b6ed33f"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
